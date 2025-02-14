@@ -45,6 +45,11 @@
 			path = OdysseyUITests;
 			sourceTree = "<group>";
 		};
+		5BE5E4BB2D5F312A00CB72FA /* Scenes */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +80,7 @@
 		5BE5E4642D5F21B500CB72FA = {
 			isa = PBXGroup;
 			children = (
+				5BE5E4BB2D5F312A00CB72FA /* Scenes */,
 				5BE5E46F2D5F21B500CB72FA /* Odyssey */,
 				5BE5E4892D5F21B800CB72FA /* OdysseyTests */,
 				5BE5E4932D5F21B800CB72FA /* OdysseyUITests */,
@@ -109,6 +115,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				5BE5E46F2D5F21B500CB72FA /* Odyssey */,
+				5BE5E4BB2D5F312A00CB72FA /* Scenes */,
 			);
 			name = Odyssey;
 			packageProductDependencies = (
@@ -403,6 +410,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -431,6 +439,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
