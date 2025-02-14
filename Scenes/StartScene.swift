@@ -16,6 +16,7 @@ class StartScene: SKScene {
         startLabel.text = "CLICK TO PLAY"
         startLabel.fontSize = 30
         startLabel.position = CGPoint(x: size.width / 2, y: size.height / 2 - 50)
+        startLabel.name = "startLabel"
         startLabel.run(SKAction.repeatForever(SKAction.sequence([
             SKAction.fadeOut(withDuration: 0.5),
             SKAction.fadeIn(withDuration: 0.5)
@@ -24,8 +25,15 @@ class StartScene: SKScene {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        let transition = SKTransition.fade(withDuration: 1.0)
-        let menuScene = MenuScene(size: self.size)
-        self.view?.presentScene(menuScene, transition: transition)
+        if let touch = touches.first {
+            let location = touch.location(in: self)
+            let node = atPoint(location)
+            
+            if node.name == "startLabel" {
+                let transition = SKTransition.fade(withDuration: 1.0)
+                let menuScene = MenuScene(size: self.size)
+                self.view?.presentScene(menuScene, transition: transition)
+            }
+        }
     }
 }
